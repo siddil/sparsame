@@ -1,0 +1,42 @@
+{
+	"layout":{
+		"title":"Portal: Test 'Easy' Features",
+		"includeHeader":"main",
+		"rows":[
+			{
+				"rowId":"r1",
+				"height":"280px",
+				"type":"pong-easytable",
+				"resourceURL":"svc/tbl-data",
+				"title":"Easy Table",
+				"moduleConfig":{
+					"pollDataSec":"150",	
+					"dataURL":"",
+					"easyCols":[
+						"*ID|5%",
+						"Name=Name.0",
+						"ProductPage_linkForCol_1",
+						"Picture",
+						"ZoomImg_zooms_Picture",
+						"Status_checkbox",
+						"Rating",
+						"Description_editable",
+						"Product~Page_link"
+					],
+					"maxRows":"4"
+				},
+				"type_id":"5",
+				"decor":"decor",
+				"actions":[
+					{
+						"type":"pong-help",
+						"param":{
+							"showConfig":"r1"
+						}
+					}
+				]
+			}
+		],
+		"includeFooter":"main"
+	}
+}

@@ -1,0 +1,33 @@
+{
+    "layout": {
+        "title": "Wikipedia",
+		"includeHeader":"main",
+        "rows": [
+            {
+                "rowId": "WikiDemo",
+                "height": "600px",
+                "resourceURL": "https://${lang}.wikipedia.org/w/",
+                "title": "Wikipedia per REST API",
+                "moduleConfig": {
+                    "page": {
+                        "EN": "Main_Page",
+                        "DE": "Wikipedia:Hauptseite",
+                        "IT": "Pagina_principale"
+                    },
+                    "wikiRef": "/wiki/"
+                },
+                "type": "pong-mediawiki",
+                "decor": "decor",
+				"actions":[
+					{
+						"type":"pong-help",
+						"param":{
+							"showConfig":"WikiDemo"
+						}
+					}
+				]
+            }
+        ],
+		"includeFooter":"main"
+    }
+}

@@ -1,0 +1,29 @@
+{
+  "layout":{
+    "title":"Portal: Test 'Icon' Feature",
+    "includeHeader":"main",
+    "rows":[
+        {
+          "rowId":"Main",
+          "height":"600px",
+          "cols":[
+            {
+              "columnId":"Icons",
+              "title":"",
+              "width":"7%",
+              "resourceURL":"svc/test/pongIcons",
+              "type":"pong-icons"
+            },
+            {
+              "columnId":"out",
+              "title":"Someting Else",
+              "width":"93%",
+              "decor":"decor",
+              "resourceURL":"svc/cloud/setuplog"
+            }
+          ]
+        }
+    ],
+    "includeFooter":"main"
+  }
+}

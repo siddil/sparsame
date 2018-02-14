@@ -1,0 +1,128 @@
+{
+	"layout":{
+		"title":"Portal: Test 'Easy' Features",
+		"includeHeader":"main",
+		"rows":[
+			{
+				"rowId":"instform",
+				"height":"220px",
+				"cols":[
+					{
+						"columnId":"ezFrm",
+						"title":"Eazy Form",
+						"width":"80%",
+						"resourceURL":"svc/test",
+						"type":"pong-easyform",
+						"decor":"decor",
+						"moduleConfig":{
+							"id":"tstFormId",
+							"easyFormFields":[
+								"id",
+								"c1|Name",
+								"c1|Date|date",
+								"c1|separator",
+								"c1|Remark|3rows",
+								"c2|Mailings|label",
+								"c2|Send~Ads~~|checkbox_infomails_ads",
+								"c2|Newsletter|checkbox_infomails_newsletter",
+								"c2|Pass~Word"
+							],
+							"actions":[
+								{
+									"id":"Chk",
+									"actionName":"Check",
+									"actionURL":"svc/test/check",
+									"target":"out2"
+								}
+								
+							]
+							
+						},
+						"actions":[
+							{
+								"type":"pong-help",
+								"param":{
+									"showConfig":"ezFrm"
+								}
+							}
+						]
+					},
+					{
+						"columnId":"out2",
+						"title":"Output 2",
+						"width":"20%",
+						"decor":"decor",
+						"resourceURL":"svc/cloud/setuplog",
+						"actions":[
+							{
+								"type":"pong-help",
+								"param":{
+									"showConfig":"out2"
+								}
+							}
+						]
+					}
+				]
+			},
+			{
+				"rowId":"r1",
+				"height":"290px",
+				"type":"pong-easytable",
+				"resourceURL":"svc/tbl-data",
+				"title":"Easy Table",
+				"moduleConfig":{
+					"pollDataSec":"150",	
+					"dataURL":"",
+					"filter":{
+						"dataReqParams": [ 
+							{"id":"name", "label":"Name", "description":"Search does noting :-(", "defaultVal":"*"},
+							{"id":"rating", "type":"select", "label":"Rating", "options": [ { "value":"0", "option":"doesn't matter" },{ "value":"1", "option":"top rated" } ] }, 
+							{"id":"dateMin", "label":"Newer than", "description":"Yes - this should really filer the data!", "type":"date"} 
+						],
+         		"dataReqParamsSrc": "Form"
+					},
+					"easyCols":[
+						"*ID|5%",
+						"Name=Name.0",
+						"ProductPage_linkForCol_1",
+						"Picture",
+						"ZoomImg_zooms_Picture",
+						"Status_checkbox",
+						"Rating",
+						"Description_editable",
+						"Created_date_editable",
+						"Product~Page_link"
+					],
+					"maxRows":"3"
+				},
+				"type_id":"5",
+				"decor":"decor",
+				"actions":[
+					{
+						"type":"pong-help",
+						"param":{
+							"showConfig":"r1"
+						}
+					}
+				]
+			},
+			{
+				"rowId":"log",
+				"title":"Debug Log",
+				"height":"200px",
+				"resourceURL":"svc/tbl-data",
+				"type":"pong-log",
+				"decor":"decor",
+				"actions":[
+					{
+						"type":"pong-help",
+						"param":{
+							"showConfig":"log"
+						}
+					}
+				]
+			}
+		],
+		"includeFooter":"main"
+	}
+}

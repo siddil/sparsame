@@ -1,0 +1,376 @@
+/* You can add all your custom styles here */
+
+body {
+		font-family: "Trebuchet MS", "Helvetica", "Arial",  "Verdana", "sans-serif";
+		background-color: #EEE;
+}
+
+#maindiv {
+	margin: 0 auto;
+}
+
+#MainNav {
+  left: 5px;
+}
+
+#ViewTypesContentpongIcons_Div {
+	width: 800px;
+	padding-left: 100px;
+}
+  /* .main-m #ViewTypesContentpongIcons_Div {
+    width: 600px;
+    padding-left: 20px;
+  } */
+
+.pongIconViewTypesContent {
+	width: 130px;
+	height: 130px;
+	float: left;
+}
+#ViewTypesContentpongIcons_Div .pongIconImg {
+	width: 100px;
+	height: 100px;
+	margin-left: 15px;
+}
+#ViewTypesContentpongIcons_Div .pongIconLabel {
+	text-align: center;
+}
+
+#FeaturesContentpongIcons_Div {
+	width: 800px;
+	padding-left: 100px;
+}
+
+/* .main-m #FeaturesContentpongIcons_Div {
+	width: 600px;
+	padding-left: 20px;
+} */
+
+.pongIconFeaturesContent {
+	width: 130px;
+	height: 130px;
+	float: left;
+}
+#FeaturesContentpongIcons_Div .pongIconImg {
+	width: 100px;
+	height: 100px;
+	margin-left: 15px;
+}
+#FeaturesContentpongIcons_Div .pongIconLabel {
+	text-align: center;
+}
+
+#r1ContentPongList .pongListRow {
+	border-top-width: 1px; 
+	border-top-style: solid;
+	height: 100px;
+}
+
+.pongListCellXCust {
+	width: 100px;
+}
+
+.pongListCellID {
+	width: 80px;
+	font-size: 20px;
+	text-align: center;
+}
+
+.pongListCellCustomerCountLb {
+	width: 100px;
+	text-align: center;
+	color: #888;
+}
+.pongListCellCustomerCount {
+	width: 100px;
+	font-size: 16pt;
+	text-align: center;
+}
+
+.cellRating {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+.pongListCellXRating {
+	width: 100px;
+}
+.pongListCellRatingLb {
+	width: 100px;
+	text-align: center;
+	color: #888;
+}
+.pongListCellRating {
+	width: 100px;
+}
+
+.pongListCellXSize {
+	width: 120px;
+	text-align: center;
+}
+.pongListCellSizelb {
+	width: 120px;
+	text-align: center;
+	color: #888;
+}
+.pongListCellSlb {
+	width: 35px;
+	padding-right: 5px;
+	text-align: right;
+}
+.pongListCellMlb {
+	width: 35px;
+	padding-right: 5px;
+	text-align: right;
+}
+.pongListCellLlb {
+	width: 35px;
+	padding-right: 5px;
+	text-align: right;
+}
+.pongListCellSizeS {
+	width:35px;
+	padding-left: 5px;
+	text-align: left;
+}
+.pongListCellSizeM {
+	width:35px;
+	padding-left: 5px;
+	text-align: left;
+}
+.pongListCellSizeL {
+	width:35px;
+	padding-left: 5px;
+	text-align: left;
+}
+.pongListCellSizeStrend {
+	width:20px;
+}
+.pongListCellSizeMtrend {
+	width:20px;
+}
+.pongListCellSizeLtrend {
+	width:20px;
+}
+
+.pongListCellXAvail {
+	width: 100px;
+	text-align: center;
+}
+.pongListCellAvailabilityLb {
+	width: 100px;
+	color: #888;
+}
+.pongListCellAvailability  {
+	width: 100px;
+	font-size: 16pt;
+}
+
+
+.pongListCellXOrders { 
+	text-align: center;
+	width: 200px;
+}
+.pongListCellOrderslb { 
+	width: 200px;
+	color: #888;
+}
+.pongListCellOrdersDlb { 
+	width: 100px;
+	text-align: left; 
+}
+.pongListCellOrdersWlb { 
+	width: 100px;
+	text-align: left; 
+}
+.pongListCellOrdersMlb { 
+	width: 100px;
+	text-align: left; 
+}
+.pongListCellOrdersD {
+	width: 40px;
+	text-align: right; 
+	padding-right: 10px;
+	font-weight: bold;
+}
+.pongListCellOrdersW {
+	width: 40px;
+	text-align: right; 
+	padding-right: 10px;
+	font-weight: bold;
+}
+.pongListCellOrdersM {
+	width: 40px;
+	text-align: right; 
+	padding-right: 10px;
+	font-weight: bold;
+}
+.pongListCellOrdersDtrend {
+	width: 20px;
+}
+.pongListCellOrdersWtrend {
+	width: 20px;
+}
+.pongListCellOrdersMtrend {
+	width: 20px;
+}
+
+.pongListCellXSizeG {
+	width: 100px;
+}
+.pongListCellSizeGlb {
+	width: 100px;
+	color: gray;
+}
+.pongListCellSizeStat {
+	width:100px;
+	height: 50px;
+}
+
+.pongListCellXUsage{
+	width: 100px;
+}
+.pongListCellUsageLb {
+	width: 100px;
+	color: gray;
+}
+.pongListCellUsage {
+	width: 100px;
+	height: 70px;
+}
+
+.r1ContentRowExpand div { float: left; } 
+
+
+/* FOR MOBILE PHONE VIEWPORTS ======================================== */
+@media screen and (max-device-width: 480px) {
+  /*--- iPhone only CSS here ---*/
+
+  body {
+    margin:0px;
+  } 
+
+  #header {
+    height: 142px;
+  }
+
+  #feedbackView {
+    display: none;
+  }
+
+  #maindiv {
+    width:320px;
+    margin: 0 auto;
+  }
+
+  #PullDownMenuPullDownButton {
+    width: 60px;
+    position: absolute;
+    right:5px;
+  }
+  #PullDownMenu, .PullDownBtn  {
+    width: 200px;
+    height: 60px;
+  }
+  #ViewTypesContentpongIcons_Div, #FeaturesContentpongIcons_Div {
+    width:100%;
+    padding-left: 10px;
+  }
+
+  #Search {
+    display: none;
+  }
+
+  .pongIconViewTypesContent, 
+  .pongIconFeaturesContent {
+    width: 100px;	
+    height: 100px;
+    float: left;
+  }
+
+  #ViewTypesContentpongIcons_Div .pongIconImg, 
+  #FeaturesContentpongIcons_Div  .pongIconImg {
+    width: 80px;
+    height: 80px;
+    margin-left: 5px;
+  }
+
+  #ViewTypesContentpongIcons_Div .pongIconLabel, 
+  #FeaturesContentpongIcons_Div  .pongIconLabel {
+    text-align: center;
+    font-size: 0.9em;
+  }
+
+  #SubNav {
+    height: 50px;
+  }
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+  /* For landscape layouts only */
+  
+  body {
+    margin:0px;
+  } 
+
+  #header {
+    height: 142px;
+  }
+
+  #feedbackView {
+    display: none;
+  }
+  
+  #maindiv {
+    width:667px;
+    margin: 0 auto;
+  }
+
+  #PullDownMenuPullDownButton {
+    width: 60px;
+    position: absolute;
+    right:5px;
+  }
+  #PullDownMenu, .PullDownBtn  {
+    width: 200px;
+    height: 60px;
+  }
+
+  #ViewTypes,
+  #Features {
+    height: 255px;
+  }
+
+  #ViewTypesContentpongIcons_Div, #FeaturesContentpongIcons_Div {
+    width:100%;
+    padding-left: 10px;
+  }
+
+  #Search {
+    display: none;
+  }
+
+  .pongIconViewTypesContent, 
+  .pongIconFeaturesContent {
+    width: 100px;	
+    height: 100px;
+    float: left;
+  }
+
+  #ViewTypesContentpongIcons_Div .pongIconImg, 
+  #FeaturesContentpongIcons_Div  .pongIconImg {
+    width: 80px;
+    height: 80px;
+    margin-left: 5px;
+  }
+
+  #ViewTypesContentpongIcons_Div .pongIconLabel, 
+  #FeaturesContentpongIcons_Div  .pongIconLabel {
+    text-align: center;
+    font-size: 0.9em;
+  }
+
+  #SubNav {
+    height: 50px;
+  }
+}

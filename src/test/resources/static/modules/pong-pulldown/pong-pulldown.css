@@ -1,0 +1,33 @@
+.pong-pulldown {
+	position : absolute;
+	top: 70px;
+	right: 5px;
+	width: 200px;
+	height: 30px;
+}
+
+.PullDownBtn {
+	position : absolute;
+	top: 5px;
+	right: 0px;
+	font-size: 10pt;
+	text-align:center;
+	color: gray;
+	width:120px;	
+	font-size: 10pt;
+}
+
+.PullDownMenu {
+	position : absolute;
+	top: 30px;
+	font-size: 10pt;
+	color: #F0F0F0;
+	width:200px;
+	font-size: 10pt;
+	background-color: #909090;
+	z-index: 10000; 
+}
+
+.PullDownMenuItem {
+	padding: 4px;
+}

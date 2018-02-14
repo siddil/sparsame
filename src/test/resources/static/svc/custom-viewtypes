@@ -1,0 +1,6 @@
+{
+    "icons":[
+       { "id":"Form", "layout":"svc/layout/custom/forms", "label":"Form", "img":"modules/pong-form/icon.svg" },
+    ],
+    "update":"5000"
+}

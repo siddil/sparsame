@@ -1,0 +1,64 @@
+{
+	"layout":{
+		"title":"Portal: Tree Test",
+		"includeHeader":"main",
+		"rows":[
+	    	{
+		        "rowId": "r1",
+		        "height": "230px",
+		        "cols": [
+		          {
+		            "columnId": "out1",
+		            "title": "Output 1",
+		            "width": "20%",
+					"type":"pong-tree",
+					"resourceURL":"svc/mock/tree",
+					"title":"Tree Test",
+					"moduleConfig":{
+						"dataURL":"svc/mock/tree",
+						"titleField":"info",
+						"treeArray":"types",
+						"idField":"productId",
+						"labelField":"productName",
+						"update":["out2"],
+						"maxDeepth":"4"
+					},
+		            "decor" : "decor"
+		          },
+		          {
+		            "columnId": "out2",
+		            "title": "Search Result",
+		            "width": "80%",
+		            "decor" : "decor",
+					"type":"pong-table",
+					"moduleConfig": {
+	                    "rowId": "id",
+	                    "cols": [
+	                        {
+	                            "id": "item",
+	                            "label": "Item",
+	                            "cellType": "text",
+	                            "width": "40%"
+	                        },	
+	                        {
+	                            "id": "type",
+	                            "label": "Product Type",
+	                            "cellType": "text",
+	                            "width": "40%"
+	                        },
+	                        {
+	                            "id": "price",
+	                            "label": "Price",
+	                            "cellType": "text",
+	                            "width": "20%"
+	                        }
+	                    ]
+					},
+		            "resourceURL": "svc/mock/product"   
+				    }
+		        ]
+		      }
+		],
+		"includeFooter":"main"
+	}
+}

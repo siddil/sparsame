@@ -1,0 +1,35 @@
+{
+  "layout": {
+    "title": "Sparsame",
+    "header": {
+      "logoURL": "img/logo.png",
+      "linkList": [
+      ],
+      "frameWarning":"true",
+      "modules" : [
+      ]
+    },
+    "rows": [
+      {
+        "rowId": "ViewTypes",
+        "title":"View Types",
+        "height":"280px",
+        "resourceURL":"svc/viewtypes",
+        "type":"pong-icons"
+      },
+      {
+        "rowId": "Features",
+        "title":"Features",
+        "height":"280px",
+        "resourceURL":"svc/features",
+        "type":"pong-icons"
+      }
+    ],
+    "footer": {
+      "copyrightText": "Silly app for private life controlling",
+      "modules" : [
+  		{ "id": "feedbackView", "type": "pong-feedback", "param": { } }
+  	  ]
+    }
+  }
+}

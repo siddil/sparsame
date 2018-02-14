@@ -1,0 +1,104 @@
+{
+	"layout":{
+		"title":"Test",
+		"includeHeader":"main",
+		"rows":[
+			{
+				"rowId":"io0",
+				"title":"\"Arduino\" demo -- please try it also with -> <a href=\"http://johnny-five.io/\" target=\"_blank\">johnny-five.io</a>",
+				"decor":"decor",
+				"height":"600px",
+				"resourceURL":"none",
+				"type":"pong-io",
+				"moduleConfig":{
+					"imgURL":"svc/layout/demos/io2/demo.png",
+					"dataURL":"svc/mock/arduino/",
+					"poll":60000,
+					"pollOptions":["1","5","10","30","60"],
+					"io":[
+						{
+							"id":"myFirstLED",
+							"type":"LED",
+							"pos":{ "x":300, "y":210 }
+						},
+						{
+							"id":"mySwitch",
+							"type":"Switch",
+							"pos":{ "x":60, "y":85},
+							"values":[ "on", "off" ],
+							"defaultValue":"off"
+						},
+					  { "id": "btn", "type": "Button", "label": "press me",
+							"width": "100", "height": "25",
+							"pos": { "x": "5", "y": "300" },
+							"values": [
+								{ "buttonState": "ON",  "led": "1" },
+								{ "buttonState": "OFF", "led": "0" }
+							]
+						},
+						{
+							"id":"voltage",
+							"type":"Graph",
+							"width":"230", "height":"300",
+							"layout":{
+								"name":"U[V] - dummy test ",
+								"graphType":"timeLog",
+								"colors":{"AD0":"#5A5","AD1":"#0D0"},
+								"yAxis":{
+									"min":"0",
+									"max":"10",
+									"scaleHiMin":"2", "scaleHiMax":"50",
+									"scaleLoMin":"0", "scaleLoMax":"50",
+									"labelInteval":["1","5","10"],
+									"grid":"label",
+									"gridColor":"#EEE"
+								},
+								"xAxis":{
+									"axisType":"time",
+									"labelCnt":"4",
+									"gridColor":"#EEE"
+								}								
+							},
+							"pos":{ "x":"400", "y":"100" }
+						},
+						{
+							"id":"voltageLog",
+							"type":"Graph",
+							"width":"230", "height":"300",
+							"layout":{
+								"name":"logU[V] - dummy test ",
+								"graphType":"timeLog",
+								"colors":{"AD0":"#5A5","AD1":"#0D0"},
+								"yAxis":{
+									"axisType":"logarithmic",
+									"min":"0.08", "max":"10",
+									"labels":["0.0001","0.001","0.01","0.1","1","10","100","1000"],
+									"grid":["0.0001","0.001","0.01","0.1","1","10","100","1000",
+												"0.0002","0.002","0.02","0.2","2","20","200",
+												"0.0004","0.004","0.04","0.4","4","40","400",
+												"0.0006","0.006","0.06","0.6","6","60","600",
+												"0.0008","0.008","0.08","0.8","8","80","800"],
+									"gridColor":"#EEE"
+								},
+								"xAxis":{
+									"axisType":"time",
+									"labelCnt":"4",
+									"gridColor":"#EEE"
+								}								
+							},
+							"pos":{ "x":"700", "y":"100" }
+						}
+
+					]
+				},
+				"actions":[
+					{
+						"type":"pong-help",
+						"param":{ "showConfig":"io0" }
+					}
+				]
+			}
+		],
+		"includeFooter":"main"
+	}
+}

@@ -1,0 +1,55 @@
+.pong-navbar {
+	position : absolute;
+	top: 70px;
+	left: 50px;
+	width:80%;	
+	font-size: 12pt;
+}
+#header .pong-navbar a:link{color:#FFF;}
+#header .pong-navbar a:visited{color:#FFF;}
+#header .pong-navbar a:hover{color:#222;}
+#header .pong-navbar a:active{color:#FFF;} 
+
+.pongNavBarItem { 
+	float:left; 
+	width: 110px; 
+	height: 26px; 
+	text-align: center;
+	background-color: #bbb;
+	color: #fff;
+	margin: 2px;
+	padding: 2px;
+}
+
+.pongNavBarPullDown {
+	width: 110px; 
+	height: 32px;
+}
+
+.pongNavBarPullDownMenu { 
+	position:absolute;
+	top:32px;
+	padding:5px;
+	min-width:110px;
+	background-color: #AAA;
+	z-index: 100000;
+	display: none;
+}
+
+.pongNavBarItemActive {
+	font-size: 14pt;
+	font-weight: bold;
+	background-color: #ddd;
+	color: #fff;
+	
+}
+
+.pongNavBarItemInfo {
+	position: absolute;
+	font-size: 0.7em;
+	color: #FF8;
+}
+
+.pongNavBarPullDownItem {
+	width:100%
+}
