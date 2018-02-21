@@ -5,8 +5,8 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 import javax.persistence.*;
 
-@Entity (name="MovementKeyWords")
-@Table (name="MovementKeyWords")
+@Entity (name="Keywords")
+@Table (name="Keywords")
 @SequenceGenerator(name="pks",  allocationSize=5)
 public class MovementKeyWords {
     @Id
@@ -15,18 +15,18 @@ public class MovementKeyWords {
     private Long id;
 
     @JsonProperty(required = true)
-    private String keyWord;
+    private String keyword;
 
     @Enumerated
     @Column(columnDefinition = "smallint",name="fk_mov_type")
     @JsonProperty(required = true)
     private MovementType type;
 
-    public MovementKeyWord() {
+    public MovementKeyWords() {
     }
 
-    public MovementKeyWord(String keyWord, MovementType type) {
-        this.keyWord= keyWord;
+    public MovementKeyWords(String keyWord, MovementType type) {
+        this.keyword = keyWord;
         this.type = type;
     }
 
@@ -34,17 +34,17 @@ public class MovementKeyWords {
         return id;
     }
 
-    public MovementKeyWord setId(Long id) {
+    public MovementKeyWords setId(Long id) {
         this.id = id;
         return this;
     }
 
-    public String getKeyWord() {
-        return keyWord;
+    public String getKeyword() {
+        return keyword;
     }
 
-    public void setKeyWord(String keyWord) {
-        this.keyWord = keyWord;
+    public void setKeyword(String keyword) {
+        this.keyword = keyword;
     }
 
     public MovementType getType() {

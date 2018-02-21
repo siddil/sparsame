@@ -22,11 +22,23 @@
         </insert>
         <insert tableName="MovementType">
             <column name="id" valueNumeric="3"/>
-            <column name="name" value="LEISURE"/>
+            <column name="name" value="FOOD"/>
         </insert>
         <insert tableName="MovementType">
             <column name="id" valueNumeric="4"/>
+            <column name="name" value="LEISURE"/>
+        </insert>
+        <insert tableName="MovementType">
+            <column name="id" valueNumeric="5"/>
             <column name="name" value="CLOTHING"/>
+        </insert>
+        <insert tableName="MovementType">
+            <column name="id" valueNumeric="6"/>
+            <column name="name" value="UNDEF"/>
+        </insert>
+        <insert tableName="MovementType">
+            <column name="id" valueNumeric="7"/>
+            <column name="name" value="HYGIEN"/>
         </insert>
     </changeSet>
 </databaseChangeLog>

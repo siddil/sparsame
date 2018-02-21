@@ -17,6 +17,7 @@ public class BasicReport {
     public Float surviving_amount = new Float(0.0);
     public Float total_amount = new Float(0.0);
     public Float margin_amount = new Float(0.0);
+    private Float notCategorized_tot = new Float(0.0);
     @JsonIgnore
     private List<Movement> food;
     @JsonIgnore
@@ -31,6 +32,9 @@ public class BasicReport {
     private List<Movement> notNegotiable;
     @JsonIgnore
     private List<Movement> hygiene;
+    @JsonIgnore
+    private List<Movement> notCategorized;
+
     public BasicReport(){
         food = Lists.newArrayList();
         state = Lists.newArrayList();
@@ -39,6 +43,7 @@ public class BasicReport {
         clothing = Lists.newArrayList();
         notNegotiable = Lists.newArrayList();
         hygiene = Lists.newArrayList();
+        notCategorized = Lists.newArrayList();
     }
 
     public Float getFood_tot() {
@@ -71,6 +76,10 @@ public class BasicReport {
                 break;
             case HYGIENE:
                 hygiene.add(movement);
+                break;
+            case UNDEF:
+                notCategorized.add(movement);
+                break;
             default:
                 throw new IllegalArgumentException(movement.getType() + " not supported");
         }
@@ -98,6 +107,10 @@ public class BasicReport {
         }
         for (Movement entry: leisure) {
             leisure_tot = leisure_tot+ entry.getAmount();
+        }
+
+        for (Movement entry: notCategorized) {
+            notCategorized_tot = notCategorized_tot+ entry.getAmount();
         }
 
         surviving_amount = food_tot + hygiene_tot + notNegotiable_tot;
@@ -136,5 +149,9 @@ public class BasicReport {
 
     public Float getMargin_amount() {
         return margin_amount;
+    }
+
+    public Float getNotCategorized_tot() {
+        return notCategorized_tot;
     }
 }

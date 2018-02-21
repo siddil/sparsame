@@ -27,7 +27,7 @@
         </createTable>
 
         <createTable tableName="MovementType"
-                     remarks="A table to contain all the authors">
+                     remarks="A table to contain all the movement types">
             <column name="id" type="int">
                 <constraints nullable="false" primaryKey="true"/>
             </column>
@@ -36,8 +36,25 @@
             </column>
         </createTable>
 
+        <createTable tableName="Keywords"
+                     remarks="A table to contain all keyword for movement types">
+            <column name="id" type="int">
+                <constraints nullable="false" unique="true" primaryKey="true"/>
+            </column>
+            <column name="keyword" type="varchar(255)">
+                <constraints nullable="false" />
+            </column>
+            <column name="fk_mov_type" type="int">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+
         <addForeignKeyConstraint baseTableName="Movement" baseColumnNames="fk_mov_type"
                                  constraintName="mov_fk"
+                                 referencedTableName="MovementType" referencedColumnNames="id"/>
+
+        <addForeignKeyConstraint baseTableName="Keywords" baseColumnNames="fk_mov_type"
+                                 constraintName="kw_mov_fk"
                                  referencedTableName="MovementType" referencedColumnNames="id"/>
     </changeSet>
 </databaseChangeLog>

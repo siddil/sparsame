@@ -6,5 +6,5 @@
 
     <include file="changelog/00-create-schema.xml" relativeToChangelogFile="true"/>
     <include file="changelog/01-insert-movement-types.xml" relativeToChangelogFile="true"/>
-
+    <include file="changelog/02-create-sequence.xml" relativeToChangelogFile="true"/>
 </databaseChangeLog>

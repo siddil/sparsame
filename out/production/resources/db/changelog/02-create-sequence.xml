@@ -5,15 +5,8 @@
         xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
          http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
-<changeSet author="luca" >
-    <createSequence catalogName="cat"
-                    cycle="true"
-                    incrementBy="2"
-                    maxValue="1000"
-                    minValue="10"
-                    ordered="true"
-                    schemaName="public"
-                    sequenceName="seq_id"
-                    startValue="5"/>
+<changeSet id="o3" author="luca" >
+    <createSequence sequenceName="HIBERNATE_SEQUENCE"
+                    startValue="1"/>
 </changeSet>
 </databaseChangeLog>
